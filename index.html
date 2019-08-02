@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+    />
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- bootstrap container -->
+    <div class="container">
+      <!-- 1.todo list -->
+      <div class="row">
+        <div class="mt-5 col-lg-4 todoZone">
+          <div class="mb-4">
+            <h4>My Todo</h4>
+            <div class="form-inline">
+              <input
+                type="text"
+                placeholder="add item"
+                id="newTodo"
+                class="form-control mr-2"
+              />
+              <button id="addBtn" class="btn btn-info">Add</button>
+            </div>
+          </div>
+          <ul id="my-todo" class="list-unstyled">
+            <!-- display todos here -->
+          </ul>
+        </div>
+
+        <!-- 2.complete list -->
+        <div class="mt-5 col-lg-4 completeZone">
+          <div class="mb-4">
+            <h4>Done</h4>
+          </div>
+          <ul id="my-done" class="list-unstyled">
+            <!-- display todos here -->
+          </ul>
+        </div>
+
+        <!-- 3.trash list -->
+        <div class="mt-5 col-lg-4 trashZone" id="trashZone">
+          <div class="mb-4">
+            <h4>Trash</h4>
+            <i class="delete fa fa-trash" id="clearAll"></i
+            ><label>(Clear All)</label>
+          </div>
+          <ul id="my-trash" class="list-unstyled">
+            <!-- display todos here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
